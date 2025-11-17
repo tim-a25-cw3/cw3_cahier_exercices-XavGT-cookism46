@@ -1,0 +1,12 @@
+.labo {
+    background: var(--color-black);
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    h2 {
+        color: var(--color-white);
+    }
+}

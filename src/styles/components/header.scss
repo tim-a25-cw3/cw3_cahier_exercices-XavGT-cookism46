@@ -1,5 +1,17 @@
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 25px 0;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    a {
+        color: var(--color-white);
+        font-weight: 600;
+        font-family: var(--font-primary);
+        text-transform: uppercase;
+        font-size: #{typo(20px, 20px)};
+    }
 }

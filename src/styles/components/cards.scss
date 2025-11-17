@@ -1,0 +1,62 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    @media (width<= $breakpoint-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+    @media (width<= $breakpoint-sm) {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xl);
+    }
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+
+    @media (width>= $breakpoint-md) {
+        &:nth-child(even) {
+            .card__content {
+                order: -1;
+            }
+        }
+    }
+
+    @media (width<= $breakpoint-md) {
+        display: block;
+    }
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}
+
+.card__media {
+    aspect-ratio: 595 / 490;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    @media (width<= $breakpoint-md) {
+        margin-bottom: 32px;
+    }
+}
