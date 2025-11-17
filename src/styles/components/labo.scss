@@ -9,4 +9,10 @@
     h2 {
         color: var(--color-white);
     }
+
+    span {
+        @media (width<= $breakpoint-md) {
+            font-weight: 400;
+        }
+    }
 }

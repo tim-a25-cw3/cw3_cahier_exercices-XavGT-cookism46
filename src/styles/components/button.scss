@@ -1,0 +1,12 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-h3-button);
+    text-transform: uppercase;
+    letter-spacing: 4%;
+    font-weight: 700;
+    background: var(--color-primary);
+    padding: 16px 8px;
+    color: var(--color-black);
+}

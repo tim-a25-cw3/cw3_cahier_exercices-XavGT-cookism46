@@ -46,6 +46,14 @@
             gap: 16px;
         }
     }
+    .description {
+        font-size: var(--font-size-descri);
+        font-weight: 600;
+    }
+    .tag {
+        font-size: var(--font-size-content);
+        font-weight: 300;
+    }
 }
 
 .card__media {
